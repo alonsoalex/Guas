@@ -1,0 +1,10 @@
+
+.galeria-contenedor{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    border: green 2px solid;
+   width: 100%;
+   gap: 20px;
+    
+}
