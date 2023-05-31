@@ -5,7 +5,7 @@ import "./globals.css";
 
 import './firebase/config'
 
-
+import Footer from './components/Footer.jsx'
 
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
@@ -24,7 +24,10 @@ export default function RootLayout({ children }) {
         <div className="gridLayout">
           <div>
             <NavBar />
+
+      
           </div>
+          {children} 
         </div>
        
 
@@ -32,9 +35,12 @@ export default function RootLayout({ children }) {
       
       
 
-          {children} 
-        <div className="footer">fooyer</div>
+      
+{/* <Footer/>
+ */}
+       <footer className="footer">fotter</footer>
       </body>
     </html>
   );
 }
+

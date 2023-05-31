@@ -3,7 +3,7 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 
 
-export default function  Item({id,title}){
+export default function  Item({id,title,img}){
 
 
 
@@ -19,13 +19,13 @@ const prueba = 'pruebaNANA'
            
            <div className="caja">
            <div class="card" >
-<img src="..." class="card-img-op" alt="..."/>
+<img src={img} class="card-img-op" alt="..."/>
 <div class="card-body">
  <h5 class="card-title">{title}</h5>
  <hr />
  <p class="card-text">description</p>
  <hr />
- <Link href={`./galeria/${id}`} class="btn btn-primary">Go {id}</Link>
+ <Link href={`./galeria/${id}`} class="btn btn-primary">Go</Link>
 </div>
 </div>
              </div>

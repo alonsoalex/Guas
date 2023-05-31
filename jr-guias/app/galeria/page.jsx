@@ -38,7 +38,7 @@ useEffect(()=>{
         return(
           <>        
        
-          <Item id={`${array.id}`} title={`${array.name}`}/>
+          <Item img={array.img}id={`${array.id}`} title={`${array.name}`}/>
        
           </>
 
