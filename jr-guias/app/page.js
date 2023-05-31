@@ -1,12 +1,14 @@
 
 import Link from 'next/link'
 
-export default function Home() {
+import Home from './home/page'
+
+export default function page() {
 return (
 
 
 <div>
-<h2>HOME</h2>
+<h2>inicio </h2>
 
 </div>
 )

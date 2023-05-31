@@ -16,9 +16,16 @@ export const Component = (props) => {
   <li class="nav-item">
   <Link className='nav-link' href={'/'}>Home</Link>
   </li>
-  <li class="nav-item">
+   <li class="nav-item">
     <Link className='nav-link' href={'/galeria'}>Galeria</Link>
   </li>
+  <li class="nav-item">
+  <Link className='btn btn-secondary' href={'/register'}>Register</Link>
+  </li>
+  <li class="nav-item">
+  <Link className='btn btn-primary' href={'/login'}>Login</Link>
+  </li>
+ 
 
 </ul>
 </nav>
