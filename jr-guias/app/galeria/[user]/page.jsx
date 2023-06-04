@@ -31,6 +31,8 @@ const {createArt} = useItem()
 const value = useItem()
 
 console.log(value.art);
+
+const href=`https://wa.me/59894263246/?text=necesito ${value.art}`;
 return (
     <>
   
@@ -49,7 +51,7 @@ return (
       <button className='btn btn-primary' onClick={createArt}>+: {value.art}</button>
 
      </div>
- <a href="https://wa.me/59894263246/?text=tu%20texto%20personalizado" target="_blank">
+ <a href={href}target="_blank">
     <img src="https://logodownload.org/wp-content/uploads/2015/04/whatsapp-logo-png-0.png" width="50" height="30"/>
  </a>
  </div>
