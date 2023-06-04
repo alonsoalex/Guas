@@ -1,11 +1,13 @@
 "use client";
-
+import { useState } from "react";
 
 import "./globals.css";
 
-import './firebase/config'
+import "./firebase/config";
 
-import Footer from './components/Footer.jsx'
+import Footer from "./components/Footer.jsx";
+
+import { ItemProvider } from "./context/ItemContext";
 
 import { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import bootstrap CSS
@@ -20,27 +22,23 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className="body">
         {/* grid */}
-
-        <div className="gridLayout">
-          <div>
-            <NavBar />
-
-      
+        <ItemProvider>
+          <div className="gridLayout">
+            <div>
+          
+                <NavBar />
+              
+            </div>
+            {children}
           </div>
-          {children} 
-        </div>
-       
+        </ItemProvider>
 
         {/* grid */}
-      
-      
 
-      
-{/* <Footer/>
- */}
-       <footer className="footer">fotter</footer>
+        {/* <Footer/>
+         */}
+        <footer className="footer">fotter</footer>
       </body>
     </html>
   );
 }
-

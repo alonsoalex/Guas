@@ -1,31 +1,38 @@
+"use client"
+import {useItem} from '../context/ItemContext';
 
 import React from 'react'
 import Link from 'next/link';
 import './NavBar.css';
-export const Component = (props) => {
+import Carrito from './Carrito/Carrito';
+
+
+
+
+export default function  NavBar() {
+
+  const value = useItem()
     return(
+
+
+
         <div>
         
 <nav className='navBar'>
 <div className='logo-nav'><h4 className='logoIMG'>LOGO</h4></div>
 
-<ul class="nav nav-underline">
-  <li class="nav-item">
+<ul className="nav nav-underline">
+  <li className="nav-item">
   
   </li>
-  <li class="nav-item">
+  <li className="nav-item">
   <Link className='nav-link' href={'/'}>Home</Link>
   </li>
-   <li class="nav-item">
+   <li className="nav-item">
     <Link className='nav-link' href={'/galeria'}>Galeria</Link>
   </li>
-  <li class="nav-item">
-  <Link className='btn btn-secondary' href={'/register'}>Register</Link>
-  </li>
-  <li class="nav-item">
-  <Link className='btn btn-primary' href={'/login'}>Login</Link>
-  </li>
- 
+
+ <Carrito item={value.art}/>
 
 </ul>
 </nav>
@@ -34,4 +41,3 @@ export const Component = (props) => {
     )
 }
 
-export default Component

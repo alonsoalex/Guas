@@ -18,14 +18,14 @@ const prueba = 'pruebaNANA'
         <>
            
            <div className="caja">
-           <div class="card" >
-<img src={img} class="card-img-op" alt="..."/>
-<div class="card-body">
- <h5 class="card-title">{title}</h5>
+           <div className="card" >
+<img src={img} className="card-img-op" alt="..."/>
+<div className="card-body">
+ <h5 className="card-title">{title}</h5>
  <hr />
- <p class="card-text">description</p>
+ <p className="card-text">description</p>
  <hr />
- <Link href={`./galeria/${id}`} class="btn btn-primary">Go</Link>
+ <Link href={`./galeria/${id}`} className="btn btn-primary">Go</Link>
 </div>
 </div>
              </div>

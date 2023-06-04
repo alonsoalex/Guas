@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 import {getFirestore,collection,getDocs } from 'firebase/firestore';
 
@@ -8,6 +8,8 @@ import Item from "./Item";
 import '../galeria/galeria.css'
 
 
+
+import { useState } from "react";
 
 export default function Page() {
 
@@ -25,12 +27,14 @@ useEffect(()=>{
 
 /* firestore */
 
+
+
+/* context */
   return (
     <div >
       <h3>GALERIA</h3>
       <div className="galeria-contenedor">
 
-     
       {data.map((array)=>{
 
 
